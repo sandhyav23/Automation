@@ -1,0 +1,16 @@
+package org.scan;
+public class Mark_Student {
+public static void main(String args[]) {
+	
+
+	public student_Details()
+	{
+		Scanner sc=new Scanner();
+		int id=nextint();
+		System.out.println("Student Id"+id);
+		
+
+	}
+	
+}
+}

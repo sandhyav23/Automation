@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.pack.details_emp&apos; to &apos;Details_Emp&apos;&#x0D;&#x0A;- Original project: &apos;Scanner_Pg1&apos;&#x0D;&#x0A;- Original element: &apos;org.pack.details_emp&apos;&#x0D;&#x0A;- Renamed element: &apos;org.pack.Details_Emp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;details_emp&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.pack{details_emp.java[details_emp" matchStrategy="1" name="Details_Emp" qualified="false" references="true" similarDeclarations="false" stamp="1567353401585" textual="false" version="1.0"/>
+</session>

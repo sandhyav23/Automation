@@ -1,0 +1,64 @@
+Feature: Automation practice application smoke test automation scripts
+@case1
+Scenario: verify the login functionality of the automation practise site
+Given Launch the automation practise web application 
+Then verifiy the logo of the page is displayed
+And verify the page title in homepage
+When user click on the sign In button in the home page
+Then verify the create account page is displayed
+When user should enter the email id in the email Id feild
+And User should enter the password in the password feild
+And  the user should click on the sign in button in the create account page
+
+@case2
+Scenario: Verify the search functionality
+Given User should be in home page
+Then Validate the user name
+When User should click on the dress button
+And User shoud click on the summer dresses
+
+@case3
+Scenario: Selecting the dress functionality
+When user should click on the Quick view
+
+@case4
+Scenario: Verify the pop-up window functionality
+Then user should verify the select dress is displayed in the page
+And the user should select the quantity
+And the user should select the color 
+And the user should select the size
+And User should click on the add to cart button
+
+@case5
+Scenario: Verify the add to cart functionality
+Then User should verify whether the placed order is correct
+And the user should click on the proceed to checkout button
+
+@case6
+Scenario: Verify the summary functionality
+Given user should verify the the description
+Then the user should verify the given feilds are correct
+And the user should click on the proceed to check out
+
+@case7
+Scenario: Verify the shipping functionality
+And the user should  check the checkox of the terms of services
+And user should click on the proceed to checkout button
+
+@case8
+Scenario: verify the address functionality
+When user should click on the address checkbox
+Then user should verify the billing address and delivery address 
+And the user should click on the proceed to check out
+
+@case9
+Scenario: Payment functionality
+When user should click the pay by bank wire
+And the user should click on the confirm my order button
+
+@case10
+Scenario: verify the logout button is displayed
+And user shoud click on the log out button
+
+
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Base_Class" tests="25" started="25" failures="0" errors="2" ignored="2">
+  <testsuite name="com.cucumber.runner.TestRunner" time="199.715">
+    <testsuite name="Feature: Automation practice application smoke test automation scripts" time="199.715">
+      <testsuite name="Scenario: verify the login functionality of the automation practise site" time="4.797">
+        <testcase name="Given Launch the automation practise web application" classname="Scenario: verify the login functionality of the automation practise site" time="1.35"/>
+        <testcase name="When user click on the sign In button in the home page" classname="Scenario: verify the login functionality of the automation practise site" time="1.335"/>
+        <testcase name="When user should enter the email id in the email Id feild" classname="Scenario: verify the login functionality of the automation practise site" time="0.369"/>
+        <testcase name="And User should enter the password in the password feild" classname="Scenario: verify the login functionality of the automation practise site" time="1.743"/>
+        <testcase name="And the user should click on the sign in button in the create account page" classname="Scenario: verify the login functionality of the automation practise site" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Verify the search functionality" time="33.461">
+        <testcase name="Given User should be in home page" classname="Scenario: Verify the search functionality" time="3.208"/>
+        <testcase name="When User should click on the dress button" classname="Scenario: Verify the search functionality" time="30.253"/>
+        <testcase name="And User shoud click on the summer dresses" classname="Scenario: Verify the search functionality" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Selecting the dress functionality" time="0.0" incomplete="true">
+        <skipped/>
+        <testcase name="When user should click on the Quick view" classname="Scenario: Selecting the dress functionality" time="0.0" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Verify the pop-up window functionality" time="30.15" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='group_1']"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DVDHJG0', ip: '192.168.1.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\CHARLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f1037549cb0318c647914c8255200f17
+*** Element info: {Using=xpath, value=//select[@id='group_1']}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy17.getTagName(Unknown Source)&#13;
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)&#13;
+	at com.cucumber.baseclass.Base.dropdown(Base.java:147)&#13;
+	at com.cucumber.stepdefinition.StepDefinition.the_user_should_select_the_size(StepDefinition.java:121)&#13;
+	at ✽.And the user should select the size(src/test/java/com/cucumber/feature/automation.feature:25)&#13;
+&#13;
+</error>
+        <testcase name="Then user should verify the select dress is displayed in the page" classname="Scenario: Verify the pop-up window functionality" time="10.031"/>
+        <testcase name="And the user should select the quantity" classname="Scenario: Verify the pop-up window functionality" time="10.042"/>
+        <testcase name="And the user should select the color" classname="Scenario: Verify the pop-up window functionality" time="10.061"/>
+        <testcase name="And the user should select the size" classname="Scenario: Verify the pop-up window functionality" time="0.016">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='group_1']"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DVDHJG0', ip: '192.168.1.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\CHARLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f1037549cb0318c647914c8255200f17
+*** Element info: {Using=xpath, value=//select[@id='group_1']}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy17.getTagName(Unknown Source)&#13;
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)&#13;
+	at com.cucumber.baseclass.Base.dropdown(Base.java:147)&#13;
+	at com.cucumber.stepdefinition.StepDefinition.the_user_should_select_the_size(StepDefinition.java:121)&#13;
+	at ✽.And the user should select the size(src/test/java/com/cucumber/feature/automation.feature:25)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And User should click on the add to cart button" classname="Scenario: Verify the pop-up window functionality" time="0.0" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Verify the add to cart functionality" time="0.0">
+        <testcase name="And the user should click on the proceed to checkout button" classname="Scenario: Verify the add to cart functionality" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Verify the summary functionality" time="10.022">
+        <testcase name="Given user should verify the the description" classname="Scenario: Verify the summary functionality" time="10.022"/>
+        <testcase name="And the user should click on the proceed to check out" classname="Scenario: Verify the summary functionality" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Verify the shipping functionality" time="10.062">
+        <testcase name="And the user should  check the checkox of the terms of services" classname="Scenario: Verify the shipping functionality" time="10.062"/>
+        <testcase name="And user should click on the proceed to checkout button" classname="Scenario: Verify the shipping functionality" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: verify the address functionality" time="30.14">
+        <testcase name="When user should click on the address checkbox" classname="Scenario: verify the address functionality" time="20.09"/>
+        <testcase name="Then user should verify the billing address and delivery address" classname="Scenario: verify the address functionality" time="10.05"/>
+        <testcase name="And the user should click on the proceed to  second check out" classname="Scenario: verify the address functionality" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Payment functionality" time="10.119">
+        <testcase name="When user should click the pay by bank wire" classname="Scenario: Payment functionality" time="10.119"/>
+        <testcase name="And the user should click on the confirm my order button" classname="Scenario: Payment functionality" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: verify the logout button is displayed" time="0.007">
+        <testcase name="And user shoud click on the log out button" classname="Scenario: verify the logout button is displayed" time="0.007"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

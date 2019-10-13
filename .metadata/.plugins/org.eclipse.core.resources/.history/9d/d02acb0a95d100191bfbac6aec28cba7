@@ -1,0 +1,21 @@
+package org.pak;
+
+public class Loan1  extends Loan2 implements Loan
+{
+public void home()
+{
+	System.out.println("home loan is 0%");
+}
+public void method() 
+{
+	System.out.println("personal is 10%");
+
+}
+public static void main(String[] args) {
+	Loan1 l=new Loan1();
+	l.home();
+	l.method();
+	
+}
+
+}

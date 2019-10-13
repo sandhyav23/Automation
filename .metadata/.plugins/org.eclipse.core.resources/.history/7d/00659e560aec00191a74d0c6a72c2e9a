@@ -1,0 +1,71 @@
+package com.cucumber.stepdefinition;
+
+import com.cucumber.POM.Loginpage;
+import com.cucumber.baseclass.Base;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class StepDefinition extends Base {
+	
+	@Given("^Launch the automation practise web application$")
+	public void launch_the_automation_practise_web_application() throws Throwable {
+ Loginpage lp= new Loginpage();
+ getUrl("http://automationpractice.com/index.php");
+ 
+	    throw new PendingException();
+	}
+
+	@Then("^verifiy the logo of the page is displayed$")
+	public void verifiy_the_logo_of_the_page_is_displayed() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^verify the page title in homepage$")
+	public void verify_the_page_title_in_homepage() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^user click on the sign In button in the home page$")
+	public void user_click_on_the_sign_In_button_in_the_home_page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^verify the create account page is displayed$")
+	public void verify_the_create_account_page_is_displayed() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^user should enter the email id in the email Id feild$")
+	public void user_should_enter_the_email_id_in_the_email_Id_feild() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^User should enter the password in the password feild$")
+	public void user_should_enter_the_password_in_the_password_feild() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^the user should click on the sign in button in the create account page$")
+	public void the_user_should_click_on_the_sign_in_button_in_the_create_account_page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Given("^user shoud click on the log out button$")
+	public void user_shoud_click_on_the_log_out_button() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+
+
+}

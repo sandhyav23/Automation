@@ -1,0 +1,36 @@
+package com.cucumber.POM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Loginpage {
+	 public static WebDriver driver;
+	 public Loginpage(WebDriver ldriver) {   //parametrized costructor
+		this.driver=ldriver;                
+		PageFactory.initElements(driver, this );
+	}
+	@FindBy(xpath="//a[@class='login']")
+	private WebElement loginbt;
+	@FindBy(xpath="//input[@id='email']")
+	private WebElement emailbt;
+	@FindBy(xpath="//input[@name='passwd']")
+	private WebElement passbt;
+	@FindBy(xpath="//button[@name='SubmitLogin']")
+	private WebElement signbt;
+	public WebElement getLoginbt() {
+		return loginbt;
+	}
+	public WebElement getEmailbt() {
+		return emailbt;
+	}
+	public WebElement getPassbt() {
+		return passbt;
+	}
+	public WebElement getSignbt() {
+		return signbt;
+	}
+	
+}
+

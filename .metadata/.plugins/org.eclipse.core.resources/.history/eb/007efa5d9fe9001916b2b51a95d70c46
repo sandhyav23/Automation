@@ -1,0 +1,32 @@
+package com.cucumber.baseclass;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Base {
+public static WebDriver driver;
+
+ public static WebDriver getthedriver(String browsername)
+ {
+	 System.setProperty("webdriver.driver.chromedriver","C:\\driver\\chromedriver.exe");
+	 driver=new ChromeDriver();
+	 return driver;
+	 	 
+ }
+ public static void geturl(String url)
+ {
+ driver.get(url);
+}
+ public static void sendtext(WebElement e,String s )
+ {
+	e.sendKeys(s);
+ }
+ public static void mousehover(WebElement e)
+ {
+	 Actions ac=new Actions(driver);
+ }
+}
+
+

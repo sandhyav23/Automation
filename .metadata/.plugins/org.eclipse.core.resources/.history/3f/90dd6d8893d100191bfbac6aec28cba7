@@ -1,0 +1,9 @@
+package org.pak;
+
+public interface Loan {
+	void home();
+	void personal();
+	void education();
+
+}
+

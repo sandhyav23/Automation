@@ -1,0 +1,13 @@
+package org.scan;
+public class Mark_Student {
+public static void main(String args[]) {
+	
+		Scanner sc=new Scanner(System.in);
+		int id=nextint();
+		System.out.println("Student Id"+id);
+		
+
+	}
+	
+
+}

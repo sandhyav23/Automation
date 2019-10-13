@@ -1,0 +1,30 @@
+package com.cucumber.stepdefinition;
+
+public class StepDefinition extends Base
+{
+	@Given("^user should be in credential page$")
+	public void user_should_be_in_credential_page() throws Throwable {
+	    loginpage lp=nre loginpag
+	   
+	}
+
+	@When("^user should enter the email$")
+	public void user_should_enter_the_email() throws Throwable {
+	    
+	  
+	}
+
+	@When("^user should enter the password$")
+	public void user_should_enter_the_password() throws Throwable {
+	    
+	}
+
+	@When("^user should click the login button$")
+	public void user_should_click_the_login_button() throws Throwable {
+	    
+	
+	}
+
+
+
+}

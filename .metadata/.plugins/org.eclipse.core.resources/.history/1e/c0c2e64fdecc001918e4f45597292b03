@@ -1,0 +1,6 @@
+package org.scan;
+public class Mark_Student {
+public static void main(Stringg args[]) {
+	
+}
+}

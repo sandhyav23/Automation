@@ -1,0 +1,18 @@
+Feature: Automation practice application smoke test automation scripts
+
+Scenario: verify the login functionality of the automation practise site
+Given Launch the automation practise web application 
+Then verifiy the logo of the page is displayed
+And verify the page title in homepage
+When user click on the sign In button in the home page
+Then verify the create account page is displayed
+When user should enter the email id in the email Id feild
+And User should enter the password in the password feild
+And  the user should click on the sign in button in the create account page
+
+
+Scenario: verify the logout button is displayed
+And user shoud click on the log out button
+
+
+

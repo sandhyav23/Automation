@@ -1,0 +1,13 @@
+package com.cucumber.POM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class Address {
+	WebDriver driver;
+	public Address(WebDriver ldriver) {
+		this.driver=ldriver;
+		PageFactory.initElements(driver, this);
+
+}
+}

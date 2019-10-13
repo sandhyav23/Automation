@@ -1,0 +1,10 @@
+package org.pak;
+
+public interface Loan {
+	void home();
+	void method();
+	
+	
+
+}
+

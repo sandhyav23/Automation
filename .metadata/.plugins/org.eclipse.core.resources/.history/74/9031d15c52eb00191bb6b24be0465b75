@@ -1,0 +1,190 @@
+package seleniumjava;
+
+import java.util.List;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Base {
+public static WebDriver driver;
+
+ public static void getthedriver(String browsername)
+ {
+	 if(browsername.equalsIgnoreCase("chrome"))
+	 {
+	 System.setProperty("webdriver.driver.chromedriver","C:\\driver\\chromedriver.exe");
+	 driver=new ChromeDriver();
+	 }
+	 else
+	 {
+		 System.out.println("Broswer is invalid");
+	 }
+ }
+ public static void geturl(String url)
+ {
+ driver.get(url);
+}
+ public static void getcurrenturl(String url)
+ {
+	 
+	 try {
+	    driver.getCurrentUrl();
+		
+	} catch (Exception e) {
+		
+		e.printStackTrace();
+		System.out.println("url is not present");
+	}
+	 
+ }
+ public static void sendtext(WebElement e,String s )
+ {
+	e.sendKeys(s);
+ }
+ public static void mousehover(WebElement e)
+ {
+	 Actions ac=new Actions(driver);
+	 ac.moveToElement(e).build().perform();
+ }
+ public static void waitforvisibilityofelement(WebElement e)
+ {
+	 
+		try {
+			WebDriverWait wb=new WebDriverWait(driver,30);
+			wb.until(ExpectedConditions.visibilityOf(e));
+		} catch (Exception e1) {
+		
+			e1.printStackTrace();
+		}	
+	
+ }
+ public static void clk(WebElement e)
+ {
+	waitforvisibilityofelement(e);
+	e.click();
+ }
+ public static void navigateto(String url)
+ {
+	try {
+		driver.navigate().to(url);
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} 
+ }
+ public static void navigateback()
+ {
+	 try {
+		driver.navigate().back();
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+ }
+ public static void navigatefront()
+ {
+	 try {
+		driver.navigate().forward();
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+ }
+ public static void gettext(WebElement el)
+ {
+	try {
+		System.out.println(el.getText());
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+ }
+ 
+public static void getattribute(WebElement el)	
+{
+	try {
+		System.out.println(el.getAttribute("value"));
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+public static void getoptions(WebElement el)
+{
+	Select s=new Select(el);
+	List<WebElement> s1=s.getOptions();
+	for(WebElement w:s1)
+	{
+		System.out.println(w.getText());
+	}
+}
+public static void firstselectedop(WebElement el)
+{
+	try {
+		Select s=new Select(el);
+		WebElement firstSelectedOptions=s.getFirstSelectedOption();
+		System.out.println(firstSelectedOptions.getText());
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+public static void radiobutton(WebElement el)
+{
+	try {
+		el.click();
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+public static void refresh()
+{
+	try {
+		driver.navigate().refresh();
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+public static void  scroll(WebElement el)
+{
+try {
+	JavascriptExecutor je=	(JavascriptExecutor) driver;
+	je.executeScript("arguments[0].scrollIntoView();",el);
+} catch (Exception e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+
+}
+public static void sendkey(WebElement el,String s)
+{
+	waitforvisibilityofelement(el);
+	try {
+		if(elementisDisplayed(el)&& elementisenabled())
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+private static boolean elementisenabled() {
+	// TODO Auto-generated method stub
+	return false;
+}
+private static boolean elementisDisplayed(WebElement el) {
+	// TODO Auto-generated method stub
+	return false;
+}
+
+ }

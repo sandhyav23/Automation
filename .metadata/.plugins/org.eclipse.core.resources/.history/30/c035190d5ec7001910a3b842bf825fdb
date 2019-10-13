@@ -1,0 +1,22 @@
+package org.edu;
+
+public class Education extends Engineering_Child2
+
+{
+	public void ug() 
+	{
+		System.out.println("ug");
+	}
+	public void pg() {
+		System.out.println("pg");
+		
+	}
+public static void main(String[] args) {
+	Education E= new Education();
+	E.ug();
+	E.pg();
+	E.bE();
+	E.bTech();
+	
+}
+}

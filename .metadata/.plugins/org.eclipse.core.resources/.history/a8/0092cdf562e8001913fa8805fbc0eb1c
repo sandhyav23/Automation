@@ -1,0 +1,11 @@
+package com.cucumber.runner;
+
+import cucumber.api.junit.Cucumber;
+
+public class TestRunner {
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features="src\\test\\java\\com\\cucumber\\feature\\Facebook.feature",
+		glue="com.cucumber.stepdefinition")
+}
+
